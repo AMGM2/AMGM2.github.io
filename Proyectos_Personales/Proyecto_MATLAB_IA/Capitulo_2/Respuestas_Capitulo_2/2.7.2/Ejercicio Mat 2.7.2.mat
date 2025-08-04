@@ -1,0 +1,31 @@
+clc; % Limpia la pantalla.
+clearvars % Remueve todas las variables del espacio de trabajo.
+% Ejercicio Mat 2.7.2
+
+% Considere las siguientes Matrices
+
+A = [-2,6,-1;-5,-2,4]
+B = [2,4,-5;4,7,1;-3,-7,3]
+
+% a) Obtenga las respectivas matrices traspuestas.
+
+% b) Desarrolle un programa en MATLAB que obtenga la traspuesta de cualquier matriz.
+
+   % Punto a
+AT = A'
+BT = B'
+
+% Punto b
+
+% Programa para obtener la transpuesta de cualquier matriz
+
+% Solicita al usuario ingresar la matriz
+disp('Ingrese la matriz A entre corchetes. Ejemplo: [1 2; 3 4]');
+A = input('Matriz A: ');
+
+% Calcula la transpuesta
+AT = A';
+
+% Muestra el resultado
+disp('La transpuesta de A es:');
+disp(AT);
