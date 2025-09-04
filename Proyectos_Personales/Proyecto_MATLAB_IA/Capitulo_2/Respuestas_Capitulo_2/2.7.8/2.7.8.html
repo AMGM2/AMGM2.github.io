@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 2.7.8 en MATLAB</title>
+
+  <!-- Estilos de highlight.js -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+
+  <!-- Librería highlight.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+
+</head>
+<body>
+  <h2>Ejercicio 2.7.8</h2>
+  <p>
+    Considere el conjunto de datos de entrenamiento mostrado en la figura 2.6.<br>
+    Estimar los valores de los parámetros asociados β₀ y β₁ mediante el método de mínimos cuadrados,
+    así como el valor estimado para x = 9.
+  </p>
+
+  <pre><code class="matlab">
+% Ejercicio 2.7.8
+
+X = [1;2;4;6]; % datos de entrenamiento
+Y = [2;4;6;7]; % valores de salida
+
+N = length(X);
+X1 = [ones(N,1), X];
+beta_estimado = X1\Y;
+
+disp('Los parámetros estimados (beta_0, beta_1) son:');
+disp(beta_estimado);
+
+X_nuevo = 9;
+y_estimado = beta_estimado(1) + beta_estimado(2) * X_nuevo;
+
+disp('El valor estimado de Y para x = 9 es:');
+disp(y_estimado);
+  </code></pre>
+</body>
+</html>

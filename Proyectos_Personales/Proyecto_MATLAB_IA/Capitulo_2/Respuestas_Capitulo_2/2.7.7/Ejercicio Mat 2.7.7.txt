@@ -1,0 +1,12 @@
+disp(' Ejercicio 2.7.7 ')
+disp(' Calcule la matriz inversa de las siguientes matrices: ')
+A = [3,6;2,8]
+B = [-2,3,6;4,8,-5;9,-9,7]
+C = [-3,3,6,1;4,2,8,-5;6,-6,7,2;7,2,-2,9]
+
+disp ('Inversa de A')
+Inversa_A = inv(A) 
+disp ('Inversa de B')
+Inversa_B = inv(B)
+disp ('Inversa de C')
+Inversa_C = inv(C)

@@ -1,0 +1,11 @@
+disp(' Ejercicio 2.7.5 ')
+disp(' Calcule el determinante de las siguientes matrices ')
+A = [3,6;2,8]
+B = [-2,3,6;4,8,-5;9,-9,7]
+
+disp ('Determinante de A')
+deterA = det(A)
+
+disp ('Determinante de B')
+deterB = det(B)
+

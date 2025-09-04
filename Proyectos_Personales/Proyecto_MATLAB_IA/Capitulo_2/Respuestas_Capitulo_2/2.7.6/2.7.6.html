@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 2.7.6 en MATLAB</title>
+
+  <!-- Estilos de highlight.js -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+
+  <!-- Librería highlight.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+
+</head>
+<body>
+
+<h2>Ejercicio 2.7.6 – Matriz adjunta (adjugate)</h2>
+  <pre><code class="matlab">
+% Ejercicio 2.7.6
+A = [3 6; 2 8];
+B = [-2  3  6;
+      4  8 -5;
+      9 -9  7];
+
+% Adjunta (adjugate): adj(M) = det(M) * inv(M)
+Adjunta_A = det(A) * inv(A);
+Adjunta_B = det(B) * inv(B);
+
+disp('Adjunta de A ='); disp(Adjunta_A);
+disp('Adjunta de B ='); disp(Adjunta_B);
+  </code></pre>
+</body>
+</html>

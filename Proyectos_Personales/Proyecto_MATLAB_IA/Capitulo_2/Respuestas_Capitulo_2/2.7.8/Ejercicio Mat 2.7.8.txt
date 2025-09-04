@@ -1,0 +1,17 @@
+disp(' Ejercicio 2.7.8 ')
+disp(' Considere el conjunto de datos de entrenamiento mostrado en la figura 2.6: ')
+disp('(x1;y1) = (1,2),(x2;y2) = (2,4),(x3;y3) = (4,6),(x4;y4) = (6,7). ')
+disp('Estimar los valores de los parámetros asociados beta0 y beta1 mediante el método de mínimos cuadrados así como el estimado para x = 9.')
+
+format short % formato corto con 4 dígitos después del punto decimal.
+X = [1;2;4;6] % datos de entrenamiento del vector X
+Y = [2;4;6;7] % datos de entrenamiento del vector Y
+N = length(X);
+X = [ones(N, 1), X];
+beta_estimado = X\Y;
+disp('Los parámetros estimados (beta_0, beta_1) son:');
+disp(beta_estimado);
+X_nuevo = 9;
+y_estimado = beta_estimado(1) + beta_estimado(2) * X_nuevo;
+disp('El valor estimado de Y para x = 9 es:');
+disp(y_estimado);
