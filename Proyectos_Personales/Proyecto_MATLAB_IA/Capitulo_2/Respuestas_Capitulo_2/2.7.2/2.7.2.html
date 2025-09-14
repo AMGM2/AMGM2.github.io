@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="es">
 <head>
@@ -22,3 +23,45 @@
 clc; % Limpia la pantalla.
 clearvars % Remueve todas las variables del espacio de trabajo.
 % Ejercicio Mat 2.7.2
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 2.7.2 en MATLAB</title>
+
+  <!-- Estilos de highlight.js -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+
+  <!-- Librería highlight.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+
+</head>
+<body>
+  <h2>Ejercicio 2.7.2 – Transpuesta de matrices (ejemplos + entrada del usuario)</h2>
+  <pre><code class="matlab">
+% Ejercicio 2.7.2
+% Ejemplos
+A = [ -2  6 -1;  -5 -2  4 ];    % 2x3
+B = [  2  4 -3;   4  7 -7;  -5  1  3 ];  % 3x3
+
+AT = A.';    % transpuesta
+BT = B.';
+
+disp('AT ='), disp(AT)
+disp('BT ='), disp(BT)
+
+% Programa breve: transpuesta de una matriz introducida por el usuario
+disp('% Programa para obtener la transpuesta de cualquier matriz');
+disp('Ingrese la matriz A entre corchetes. Ejemplo: [1 2; 3 4]');
+Ausr = input('Matriz A: ');
+AusrT = Ausr.';
+disp('La transpuesta de A es:');
+disp(AusrT);
+  </code></pre>
+
+
+</body>
+</html>

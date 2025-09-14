@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="es">
 <head>
@@ -39,5 +40,44 @@ Inversa_C = inv(C)
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/matlab.min.js"></script>
   <script>hljs.highlightAll();</script>
+=======
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 2.7.7 en MATLAB</title>
+
+  <!-- Estilos de highlight.js -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+
+  <!-- Librería highlight.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+
+</head>
+<body>
+ <h2>Ejercicio 2.7.7 – Matriz inversa</h2>
+  <pre><code class="matlab">
+% Ejercicio 2.7.7
+A = [3 6; 2 8];
+B = [-2  3  6;
+      4  8 -5;
+      9 -9  7];
+C = [-3  3  6  1;
+      4  2  8 -5;
+      6 -6  7  2;
+      7  2 -2  9];
+
+Inversa_A = inv(A);
+Inversa_B = inv(B);
+Inversa_C = inv(C);
+
+disp('Inversa de A ='); disp(Inversa_A);
+disp('Inversa de B ='); disp(Inversa_B);
+disp('Inversa de C ='); disp(Inversa_C);
+  </code></pre>
+
+
 </body>
 </html>

@@ -42,5 +42,40 @@ b = bT';
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/matlab.min.js"></script>
   <script>hljs.highlightAll();</script>
+=======
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 2.7.1 en MATLAB</title>
+
+  <!-- Estilos de highlight.js -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+
+  <!-- Librería highlight.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+
+</head>
+<body>
+ <h2>Ejercicio 2.7.1 – Producto punto con transpuestas</h2>
+  <pre><code class="matlab">
+% Ejercicio 2.7.1
+a  = [  2; -3;  5; -6];
+b  = [ -7; -4; -12;  2];
+
+aT = a.';       % transpuesta de a (fila)
+bT = b.';       % transpuesta de b (fila)
+
+Ra = aT * b;    % a^T b
+Rb = bT * a;    % b^T a  (debe dar lo mismo)
+
+disp('a^T ='), disp(aT)
+disp('b^T ='), disp(bT)
+disp('a^T b ='), disp(Ra)
+disp('b^T a ='), disp(Rb)
+  </code></pre>
+
 </body>
 </html>
