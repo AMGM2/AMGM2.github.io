@@ -1,3 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Código MATLAB</title>
+
+  <!-- Highlight.js CSS (tema por defecto, puedes cambiarlo por otro) -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+
+  <style>
+    body { max-width: 900px; margin: 2rem auto; font-family: system-ui, sans-serif; padding: 0 1rem; }
+    pre { border: 1px solid #ddd; border-radius: 8px; padding: 1rem; overflow: auto; }
+  </style>
+</head>
+<body>
+
+  <h1>Codigo Ejercicio Mat 2.7.1</h1>
+
+  <pre><code class="language-matlab">
+% Ejercicio Mat 2.7.1
+
+% a) Producto Punto (a^t)b.
+% b) (b^t)a
+% c) son los mismo resultados en a y b?
+% d) dependerá del orden el resultado de los valores?
+
+aT = [2,-3,5,-6]; % Declaro el vector traspuesta de a
+a = aT';          % Declaro a
+
+bT = [-7,-4,-12,2];
+b = bT';
+
+% a) Ra = aT*b
+% b) Rb = bT*a
+% c) Si lo son en a) y b) da -74 de Resultado
+% d) No importa ya que el resultado es el mismo
+  </code></pre>
+
+  <!-- Highlight.js JS + auto-init -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/matlab.min.js"></script>
+  <script>hljs.highlightAll();</script>
+=======
 <!DOCTYPE html>
 <html lang="es">
 <head>
