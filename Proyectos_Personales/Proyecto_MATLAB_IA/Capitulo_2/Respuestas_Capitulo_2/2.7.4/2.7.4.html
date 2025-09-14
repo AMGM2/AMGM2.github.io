@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ejercicio Mat 2.7.4</title>
+
+  <!-- Highlight.js CSS -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+
+  <style>
+    body { max-width: 900px; margin: 2rem auto; font-family: system-ui, sans-serif; padding: 0 1rem; }
+    pre { border: 1px solid #ddd; border-radius: 8px; padding: 1rem; overflow: auto; }
+  </style>
+</head>
+<body>
+
+  <h1>Ejercicio Mat 2.7.4</h1>
+
+  <pre><code class="language-matlab">
+% Ejercicio Mat 2.7.4
+disp(' Ejercicio 2.7.4 ')
+disp(' Sean las siguientes tres matrices: ')
+
+A = [2,4,-5;4,7,1;-3,-7,3];
+B = [4,3,8;8,-3,9;2,5,-1];
+C = [2,-4,1;-6,8,-3;4,-9,5];
+
+disp(' a) ¿Qué condiciones se deben cumplir para realizar el producto entre dos matrices? ')
+disp(' Respuesta a) Para poder multiplicar dos matrices, el número de columnas de la primera debe ser igual al número de filas de la segunda. ')
+
+disp(' b) Obtenga AB. ')
+[m, n1] = size(A);
+[n2, p] = size(B);
+
+if(n1 ~= n2)
+    disp('La multiplicación A * B no puede realizarse: dimensiones inadecuadas.')
+else
+    C1 = A * B;  % Multiplicación estándar en MATLAB
+    C2 = zeros(m, p);  % Inicializar resultado iterativo
+
+    for i = 1:m
+        for j = 1:p
+            C2(i,j) = A(i,:) * B(:,j);  % Regla de multiplicación de matrices
+        end
+    end
+
+    disp('punto b) Resultado de A * B con el método estándar:')
+    disp(C1)
+
+    disp(' punto b) Resultado de A * B con el método iterativo:')
+    disp(C2)
+end
+
+disp(' c) ¿Es posible realizar los siguientes productos AC y BC? ')
+disp(' probando hacer el Producto AC ')
+[m, n1] = size(A);
+[n2, p] = size(C);
+
+if(n1 ~= n2)
+    disp('La multiplicación A * C no puede realizarse: dimensiones inadecuadas.')
+else
+    C3 = A * C;  % Multiplicación estándar en MATLAB
+    C4 = zeros(m, p);  % Inicializar resultado iterativo
+
+    for i = 1:m
+        for j = 1:p
+            C4(i,j) = A(i,:) * C(:,j);  % Regla de multiplicación de matrices
+        end
+    end
+
+    disp('punto c) Resultado de A * C con el método estándar:')
+    disp(C3)
+
+    disp(' punto c) Resultado de A * C con el método iterativo:')
+    disp(C4)
+end
+
+disp(' probando hacer el Producto BC ')
+[m, n1] = size(B);
+[n2, p] = size(C);
+
+if(n1 ~= n2)
+    disp('La multiplicación B * C no puede realizarse: dimensiones inadecuadas.')
+else
+    C5 = B * C;  % Multiplicación estándar en MATLAB
+    C6 = zeros(m, p);  % Inicializar resultado iterativo
+
+    for i = 1:m
+        for j = 1:p
+            C6(i,j) = B(i,:) * C(:,j);  % Regla de multiplicación de matrices
+        end
+    end
+
+    disp('punto c) Resultado de B * C con el método estándar:')
+    disp(C5)
+
+    disp(' punto c) Resultado de B * C con el método iterativo:')
+    disp(C6)
+end
+  </code></pre>
+
+  <!-- Highlight.js JS + auto-init -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/matlab.min.js"></script>
+  <script>hljs.highlightAll();</script>
+</body>
+</html>

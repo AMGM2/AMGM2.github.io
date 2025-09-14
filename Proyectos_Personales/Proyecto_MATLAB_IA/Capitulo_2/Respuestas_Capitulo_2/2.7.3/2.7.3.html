@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ejercicio Mat 2.7.3</title>
+
+  <!-- Highlight.js CSS -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+
+  <style>
+    body { max-width: 900px; margin: 2rem auto; font-family: system-ui, sans-serif; padding: 0 1rem; }
+    pre { border: 1px solid #ddd; border-radius: 8px; padding: 1rem; overflow: auto; }
+  </style>
+</head>
+<body>
+
+  <h1>Codigo Ejercicio Mat 2.7.3</h1>
+
+  <pre><code class="language-matlab">
+% Ejercicio Mat 2.7.3
+disp(' Ejercicio Mat 2.7.3 ')
+
+disp(' A continuación las siguientes Matrices ')
+
+A = [2,4,-5;4,7,1;-3,-7,3]
+B = [4,3,8;8,-3,9;2,5,-1]
+C = [2,-4,1;-6,8,-3;4,-9,5]
+
+disp(' a) Realice las siguientes operaciones' )
+disp(' A+B, ')
+disp(' A+C,')
+disp(' B+C,')
+disp(' A+B+C,')
+disp(' A+B-C.')
+
+disp(' b) Escriba un programa en MATLAB que le permita Verificar todos los resultados numéricos del inciso a) ')
+
+disp('punto b)')
+C1 = A+B
+C2 = A+C
+C3 = B+C
+C4 = A+B+C
+C5 = A+B-C
+  </code></pre>
+
+  <!-- Highlight.js JS + auto-init -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/matlab.min.js"></script>
+  <script>hljs.highlightAll();</script>
+</body>

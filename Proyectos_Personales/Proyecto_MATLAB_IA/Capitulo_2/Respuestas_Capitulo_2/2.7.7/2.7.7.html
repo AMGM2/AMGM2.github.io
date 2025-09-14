@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ejercicio Mat 2.7.7</title>
+
+  <!-- Highlight.js CSS -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+
+  <style>
+    body { max-width: 900px; margin: 2rem auto; font-family: system-ui, sans-serif; padding: 0 1rem; }
+    pre { border: 1px solid #ddd; border-radius: 8px; padding: 1rem; overflow: auto; }
+  </style>
+</head>
+<body>
+
+  <h1>Ejercicio Mat 2.7.7</h1>
+
+  <pre><code class="language-matlab">
+disp(' Ejercicio 2.7.7 ')
+disp(' Calcule la matriz inversa de las siguientes matrices: ')
+A = [3,6;2,8]
+B = [-2,3,6;4,8,-5;9,-9,7]
+C = [-3,3,6,1;4,2,8,-5;6,-6,7,2;7,2,-2,9]
+
+disp ('Inversa de A')
+Inversa_A = inv(A) 
+
+disp ('Inversa de B')
+Inversa_B = inv(B)
+
+disp ('Inversa de C')
+Inversa_C = inv(C)
+  </code></pre>
+
+  <!-- Highlight.js JS + auto-init -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/matlab.min.js"></script>
+  <script>hljs.highlightAll();</script>
+</body>
+</html>
