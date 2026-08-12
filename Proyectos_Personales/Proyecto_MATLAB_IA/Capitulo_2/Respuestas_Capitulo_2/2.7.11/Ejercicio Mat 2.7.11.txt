@@ -1,0 +1,46 @@
+disp(' Ejercicio 2.7.11 ')
+disp('Demostrar que la matriz Hessiana [(a^2)SRC(beta)/abetai abetaj] = 2X^tX (Ver página 62')
+% Número de observaciones (ejemplo con 4 puntos)
+n = 4;
+
+% Definimos variables simbólicas
+syms b0 b1 real          % parámetros beta
+syms y1 y2 y3 y4 real    % valores de salida
+syms x1 x2 x3 x4 real    % valores de entrada
+
+% Vector de parámetros
+beta = [b0; b1];
+
+% Vectores de datos
+X = [1 x1;
+     1 x2;
+     1 x3;
+     1 x4];              % matriz diseño
+y = [y1; y2; y3; y4];    % vector de observaciones
+
+
+
+% Residuo
+e = y - X*beta;
+
+% Suma de cuadrados residuales
+SRC = e.'*e;
+
+% Gradiente con respecto a beta
+grad_SRC = gradient(SRC, beta);
+
+% Hessiana con respecto a beta
+Hess_SRC = hessian(SRC, beta);
+
+grad_SRC
+Hess_SRC
+
+
+disp('Con datos reales')
+% Datos
+Xnum = [1 1; 1 2; 1 4; 1 6];
+ynum = [2; 4; 6; 7];
+
+% Hessiana numérica
+Hess_num = 2*(Xnum.'*Xnum)
+disp(Hess_num)

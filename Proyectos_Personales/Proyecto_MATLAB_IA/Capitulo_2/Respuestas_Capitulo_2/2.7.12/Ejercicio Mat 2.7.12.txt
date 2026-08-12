@@ -1,0 +1,16 @@
+disp(' Ejercicio 2.7.12 ')
+disp('Considere el siguiente sistema mecatrónico tipo centrifuga, como el que se muestra en la figura 2.7 /n
+el cual corresponde a una maquina lavadora. /n El modelo cinemático proporciona las coordenadas artesianas del extremo final de a barra i2 y se encuentra dada por:/n
+Xc = l2 cos() cos(q1) /n
+Yc = l2 cos()'sen(q1) /n
+Zc = l1 + K/2 + l2sen()/n)
+disp('a) ¿Cómo puedo establecer el modelo de regresión lineal de la centrifuga a partir de su modelo de cinemática directa? /n
+b) Implementar en MATLAB el algoritmo de mínimos cuadrados ecuación (2.38) para estimar el valor de los parámetros beta0 y beta1 = L2sen()./n
+c)¿Qué procedimiento puede proponer para encontrar de manera individual el valor numérico de la barra L2 y el ángulo alfa?. /n
+d) Note que la coordenada Zc s una constante, luego entonces: ¿Como puede determinar el valor numérico de la coordenada Zc')
+disp('Parte a)')
+format short
+
+disp('Parte b)')
+disp('Parte c)')
+disp('Parte d)')
